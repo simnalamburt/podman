@@ -15,7 +15,7 @@ func (v *MachineVM) addArchOptions() []string {
 		"-accel", "hvf",
 		"-cpu", "cortex-a57",
 		"-M", "virt,highmem=off",
-		"-drive", "file=/usr/local/share/qemu/edk2-aarch64-code.fd,if=pflash,format=raw,readonly=on",
+		"-drive", "file=/opt/homebrew/share/qemu/edk2-aarch64-code.fd,if=pflash,format=raw,readonly=on",
 		"-drive", "file=" + ovmfDir + ",if=pflash,format=raw"}
 	return opts
 }
